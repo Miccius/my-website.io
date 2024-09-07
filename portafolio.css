@@ -1,0 +1,145 @@
+/*############################################ PORTFOLOIO SECTION #####################################*/
+
+#portfolio-wrap {
+    padding: 4vw;
+    background-color: var(--light-grey-color);
+}
+
+.col-lg-12 h2 {
+    font-size: calc(1.3rem + 1vw);
+    padding-top: 4%;
+}
+.col-lg-12 .fst-word {
+    font-size: calc(1.3rem + 1vw);
+    font-weight: 200;
+}
+
+.col-lg-12 .dash {
+    width: 30px;
+    height: 8px;
+    background-color: var(--btn-social-color);
+    margin: 2vh 0 2vh 0;
+}
+
+.col-lg-12 p {
+    margin: 5vh 0 5vh 0;
+}
+
+#portfolio-grid {
+    display: flex;
+    flex-wrap: wrap;
+   
+}
+
+/*
+.portfolio-item {
+    width: calc(33.333% - 20px);
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+}
+*/
+
+.portfolio-item {
+  
+    flex: 1 1 300px; 
+    min-width: 300px; 
+    max-width: 350px; 
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: auto;
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover img {
+    transform: scale(1.1);
+}
+
+.portfolio-info {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(0, 0, 0, 0.7);
+    color: var(--primary-color);
+    padding: 10px;
+    transform: translateY(100%);
+    transition: transform 0.3s;
+}
+
+.portfolio-item:hover .portfolio-info {
+    transform: translateY(0);
+}
+
+
+
+button.portfolio-btn {
+    --b: 3px;   /* border thickness */
+    --s: .15em; /* size of the corner */
+    --c: var(--fonts-color);
+    margin-bottom: 40px;
+    padding: calc(.05em + var(--s)) calc(.3em + var(--s));
+    color: var(--c);
+    --_p: var(--s);
+    background:
+      conic-gradient(from 90deg at var(--b) var(--b),#0000 90deg,var(--c) 0)
+      var(--_p) var(--_p)/calc(100% - var(--b) - 2*var(--_p)) calc(100% - var(--b) - 2*var(--_p));
+    transition: .3s linear, color 0s, background-color 0s;
+    outline: var(--b) solid #0000;
+    outline-offset: .2em;
+  }
+  button.portfolio-btn:hover,
+  button:focus-visible{
+    --_p: 0px;
+    outline-color: var(--c);
+    outline-offset: .05em;
+  }
+  button.portfolio-btn:active {
+    background: #597cff;
+    color: var(--portfolio-color);
+  }
+  
+
+  button.portfolio-btn {
+    font-family: system-ui, sans-serif;
+    font-weight: bold;
+    font-size: 2rem;
+    cursor: pointer;
+    border: none;
+    margin: .4em;
+  }
+
+  
+  @media screen and (max-width: 780px) {
+    button.portfolio-btn {
+        --b: 2px;   /* border thickness */
+    --s: .20em; /* size of the corner */
+        font-size: 1rem;  /* Adjust the font size for smaller screens */
+        padding: 0.5em 1.5em; /* Adjust padding for mobile */
+    }
+
+}
+
+  @media screen and (max-width: 480px) {
+    button.portfolio-btn {
+        --b: 1.5px;   /* border thickness */
+        --s: .20em; /* size of the corner */
+        font-size: 1rem;  /* Adjust the font size for smaller screens */
+    }
+
+
+    .col-lg-12 .filter-list {
+
+        padding: 0 50px 0 50px ;
+    }
+     
+
+
+
+}
