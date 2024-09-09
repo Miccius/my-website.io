@@ -1,3 +1,4 @@
+
 .about-me {
     width: 100%;
     padding: 10%;
@@ -22,7 +23,7 @@
 
 .short-story h2 .about-me-me {
     font-weight: 600;
-    font-size: calc(1.5rem + 1vw);
+    
 }
 
 .short-story h4 {
@@ -71,5 +72,12 @@
 
         max-width: 800px;
     }
+
+    .short-story h2 {
+    margin-top: 80px;
+    }
+
+
+    
 
 }

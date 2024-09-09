@@ -171,7 +171,53 @@
         text-align: left;
     }
 
+   
+
     .social-icons {
         margin-top: 50px;
     }
+}
+
+
+@media screen and (max-width: 780px) {
+    .contact-form h2 {
+       margin-top: 60px;
+    }
+
+    .contact-section p {
+
+        font-size: 20px;
+    }
+
+
+    .contact-details ul li  { 
+
+     font-size: 20px;
+     padding: 10px;
+    
+    }
+
+    .contact-details ul li i { 
+
+        font-size: 30px;
+       }
+
+
+       .social-icons a {
+
+       font-size: 30px;
+       margin: 10px;
+
+       }
+
+
+       .contact-section h2  {
+
+        font-size: 35px;
+       }
+
+       .contact-section h3  {
+
+        font-size: 30px;
+       }
 }

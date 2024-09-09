@@ -124,6 +124,10 @@ button.portfolio-btn {
         padding: 0.5em 1.5em; /* Adjust padding for mobile */
     }
 
+    .col-lg-12 h2 {
+        margin-top: 80px;
+    }
+
 }
 
   @media screen and (max-width: 480px) {

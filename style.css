@@ -1,3 +1,4 @@
+
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap');
 
 * {
@@ -629,13 +630,6 @@ body {
         
     }
 
-    .social-media a {
-     
-        font-size: 22px;
-        width: 35px;
-        height: 35px;
-
-    }
 
    
     .btn {
@@ -708,11 +702,12 @@ body {
     }
 
     .home-content p {
-        font-size: 14px;
+        font-size: 22px;
     }
 
     .home-img img {
         max-width: calc(50px + 40vw);
+        margin-top: 40px;
     }
 
     .btn {
@@ -723,7 +718,11 @@ body {
 
     .content-about-me p {
 
-        font-size: 14px;
+        font-size: 20px;
+    }
+
+    .what-i-do {
+        margin-top: 90px;
     }
 
   
@@ -830,4 +829,3 @@ body {
         transform: rotate(-360deg);
       }
 }
-
