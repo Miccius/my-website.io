@@ -2,9 +2,17 @@
 
 .pricing {
     text-align: center;
-    padding: 50px 20px;
+    padding: 150px 60px;
     
     background-color: var(--light-grey-color);
+}
+
+.pricing h4 {
+
+    margin: 20px;
+    font-size: x-large;
+    font-weight: 500;
+
 }
 
 .pricing h2 {
@@ -29,6 +37,7 @@
     justify-content: center;
     flex-wrap: wrap;
     gap: 7vw;
+    margin-top: 60px;
 
    
    
@@ -41,7 +50,7 @@
     background-color: #ebeef7 ; /* Mint Green */
     border: 1px solid #ddd;
     border-radius: 8px;
-    padding: 20px;
+    padding: 10px;
     min-width: 200px;
     max-width:300px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
@@ -108,7 +117,12 @@
 .pricing-card ul li {
     margin: 10px 0;
     color: #555;
+
+
 }
+
+    
+
 
 @media screen and (max-width: 480px) {
     
