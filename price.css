@@ -9,8 +9,8 @@
 
 .pricing h4 {
 
-    margin: 20px;
-    font-size: x-large;
+    margin-top: 40px;
+    font-size: large;
     font-weight: 500;
 
 }
@@ -82,7 +82,7 @@
 */
 
 .pricing-card h3 {
-    font-size: 24px;
+    font-size: calc(1.5rem + 1vw);
     margin-bottom: 15px;
     color: #333;
 }
@@ -133,6 +133,7 @@
         max-width:250px;
     }
         .pricing-card h3 {
+            
             font-size: 20px;
             
         }

@@ -4,13 +4,16 @@
     padding: 10%;
 }
 
+
+
 .short-story {
+    
     padding: 0 3% 0 10%;
 }
 
 .short-story h2 {
     font-weight: 200;
-    font-size: calc(1.3rem + 1vw);
+    font-size: calc(1.5rem + 1vw);
 }
 
 .about-me-dash {

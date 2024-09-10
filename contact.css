@@ -49,6 +49,11 @@
     background-color: transparent;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
+
+    animation: appear 0.5s linear; /* Add duration */
+    animation-fill-mode: forwards; /* Ensure the final state persists */
+    animation-timeline: view(); /* This is not a standard property, you may remove it */
+    animation-range: entry 0% cover 40%; /* This is also not standard, you may remove it */
     
 }
 
@@ -140,15 +145,20 @@
 
 .social-icons {
     margin-top: 20px;
-    text-align: center;
+    
 }
 
 .social-icons a {
+    
     color: var(--nav-primary-color);
     font-size: calc(10px + 1.1vw);
     margin-right: 2.5vw;
 }
 
+.social-icons a:hover {
+
+    color: var(--btn-social-color);
+}
 
 
 /* Media Queries */
@@ -201,10 +211,15 @@
        }
 
 
+       .social-icons {
+        margin-top: 50px;
+       }
+
+
        .social-icons a {
 
        font-size: 30px;
-       margin: 10px;
+       margin: 15px;
 
        }
 

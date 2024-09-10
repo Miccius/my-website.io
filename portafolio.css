@@ -6,11 +6,11 @@
 }
 
 .col-lg-12 h2 {
-    font-size: calc(1.3rem + 1vw);
+    font-size: calc(1.5rem + 1vw); 
     padding-top: 4%;
 }
 .col-lg-12 .fst-word {
-    font-size: calc(1.3rem + 1vw);
+    font-size: calc(1.5rem + 1vw);
     font-weight: 200;
 }
 
@@ -49,6 +49,11 @@
     margin: 10px;
     position: relative;
     overflow: hidden;
+
+    animation: appear 0.5s linear; /* Add duration */
+    animation-fill-mode: forwards; /* Ensure the final state persists */
+    animation-timeline: view(); /* This is not a standard property, you may remove it */
+    animation-range: entry 0% cover 40%; /* This is also not standard, you may remove it */
 
 }
 
