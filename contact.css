@@ -50,10 +50,7 @@
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     margin-bottom: 40px;
 
-    animation: appear 0.5s linear; /* Add duration */
-    animation-fill-mode: forwards; /* Ensure the final state persists */
-    animation-timeline: view(); /* This is not a standard property, you may remove it */
-    animation-range: entry 0% cover 40%; /* This is also not standard, you may remove it */
+   
     
 }
 
@@ -183,6 +180,7 @@
 
     .social-icons {
         margin-top: 50px;
+       
     }
 }
 
@@ -212,7 +210,9 @@
 
 
        .social-icons {
-        margin-top: 50px;
+        
+        margin-top: 60px;
+        text-align: center;
        }
 
 

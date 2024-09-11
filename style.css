@@ -379,7 +379,7 @@ body {
    
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.5s ease, transform 0.1s ease;
+    transition: opacity 0.5s ease, transform 0.5s ease;
     
 }
 
@@ -461,7 +461,7 @@ body {
     box-shadow: 0 0 10px #ccc;
     opacity: 0;
     transform: translateY(20px);
-    transition: opacity 0.5s ease-out, transform 0.3s ease-out;
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
 }
 
 .feature.show {

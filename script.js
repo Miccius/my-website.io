@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 setTimeout(() => {
                     profession.classList.add('show');
-                }, index * 800); // Delay based on index
+                }, index * 300); // Delay based on index
                 
                 observer.unobserve(profession); // Stop observing once the animation has started
             }
@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 setTimeout(() => {
                     feature.classList.add('show');
-                }, index * 500); // Delay based on index
+                }, index * 300); // Delay based on index
                 
                 observer.unobserve(feature); // Stop observing once the animation has started
             }
