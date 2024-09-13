@@ -54,10 +54,10 @@
                 <p>"Crafting digital experiences that captivate, innovate, and inspire. I don't just build 
                     websites I create online worlds where your vision comes to life."</p>
             <div class="social-media">
-                <a href="" style="--i:7;"><i class='bx bxl-linkedin-square' ></i></a>
-                <a href="" style="--i:8;"><i class='bx bxl-instagram' ></i></a>
-                <a href="" style="--i:9;"><i class='bx bxl-github' ></i></a>
-                <a href="" style="--i:10;"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/francesco-miccio-20a1109b/" target="_blank" style="--i:7; "><i class='bx bxl-linkedin-square' ></i></a>
+              <!--  <a href="" target="_blank" style="--i:8;"><i class='bx bxl-instagram' ></i></a>-->
+                <a href="https://github.com/Miccius" target="_blank" style="--i:9;"><i class='bx bxl-github' ></i></a>
+                <a href="https://x.com/Frances52886334?t=zN5orQMX_emF5wEGwh2tpQ&s=08" target="_blank" style="--i:10;"><i class='bx bxl-twitter'></i></a>
             </div>
             
             <a href="Documents\Francesco Miccio Resume.pdf" class="btn" download>Download CV</a>
@@ -305,19 +305,25 @@
             <div class="dash-contact"></div>
             <p> Have questions about our services or want to discuss your project? 
                 Don't hesitate to reach out. We're always excited to hear about new ideas and challenges.</p>
-            <form method="POST" action="test.php">
-                <div class="form-group">
-                    <input type="text" id="first-name" name="first-name" placeholder="First Name">
-                    <input type="text" id="last-name" name="last-name" placeholder="Last Name">
-                </div>
-                <div class="form-group">
-                    <input type="email" id="email" name="email" placeholder="Email Address">
-                </div>
-                <div class="form-group">
-                    <textarea id="message" name="message" placeholder="Your Message"></textarea>
-                </div>
-                <button id="btn-contact" type="submit">Send Now</button>
-            </form>
+           
+           
+               <!-- <form action="send-email.php" method="POST"> (PHP)-->
+                <form id="contact-form" onsubmit="sendEmail(); resetForm(); return false;">
+                    <div class="form-group">
+                        <input type="text" id="first-name" name="first-name" placeholder="First Name">
+                        <input type="text" id="last-name" name="last-name" placeholder="Last Name">
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" placeholder="Email Address">
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" placeholder="Your Message"></textarea>
+                    </div>
+                    <button id="btn-contact" type="submit">Send Now</button>
+                </form>
+        
+        
+        
         </div>
     </div>
 
@@ -332,9 +338,10 @@
                 <li><i class="fas fa-envelope"></i> mifra82@gmail.com</li>
             </ul>
             <div class="social-icons">
+                <a href="https://www.linkedin.com/in/francesco-miccio-20a1109b/" target="_blank"><i class="fab fa-linkedin"></i></a>
                 <a href="https://github.com/Miccius" target="_blank"><i class="fab fa-github"></i></a>
-                <a href="#"><i class="fab fa-twitter"></i></a>
-                <a href="#"><i class="fab fa-instagram"></i></a>
+                <a href="https://github.com/Miccius" target="_blank"><i class="fab fa-twitter"></i></a>
+                
                 
             </div>
             </div>
@@ -345,18 +352,23 @@
 
    
     
+<script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+<script type="text/javascript">
+    (function() {
+        // https://dashboard.emailjs.com/admin/account
+        emailjs.init({
+          publicKey: "Z7KSHWlcQ3cx0wTBT",
+        });
+    })();
+</script>
 
-        <script src="https://kit.fontawesome.com/2dcd7e4be2.js" crossorigin="anonymous"></script>
+<script src="https://kit.fontawesome.com/2dcd7e4be2.js" crossorigin="anonymous"></script>
+
+
+<script src="script.js"></script> <!-- Link to the script.js file -->
+   
+<script src="portfolio.js"></script> <!-- Link to the script.js file -->
 
   
-  
-  
-  
-  
-  
-  
-  <script src="script.js"></script> <!-- Link to the script.js file -->
-    <script src="portfolio.js"></script> <!-- Link to the script.js file -->
-      
 </body>
 </html>

@@ -260,7 +260,7 @@ body {
     transition: .5s ease;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
-    animation-delay: calc(.2s * var(--i));
+    animation-delay: calc(.1.5s * var(--i));
    
 }
 
@@ -288,7 +288,7 @@ body {
     box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3); /* Increased shadow */
     opacity: 0;
     animation: fadeIn 1s ease forwards;
-    animation-delay: 2s;
+    animation-delay: 1.5s;
 }
 
 /* New hover effect */
@@ -721,7 +721,7 @@ body {
     }
 
     .home-img img {
-        max-width: calc(50px + 40vw);
+        max-width: calc(70px + 40vw);
         margin-top: 40px;
     }
 

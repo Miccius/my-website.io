@@ -55,7 +55,7 @@ document.addEventListener('DOMContentLoaded', function() {
 
                 setTimeout(() => {
                     feature.classList.add('show');
-                }, index * 300); // Delay based on index
+                }, index * 150); // Delay based on index
                 
                 observer.unobserve(feature); // Stop observing once the animation has started
             }
@@ -68,6 +68,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 // #################### burger menu ###################################
+
 document.addEventListener('DOMContentLoaded', () => {
     const burger = document.querySelector('.burger');
     const nav = document.querySelector('.navbar');
@@ -97,3 +98,26 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
+//########################### contact form ######################################
+
+function sendEmail() {
+    var templateParams = {
+        from_name: document.getElementById("first-name").value,
+        last_name: document.getElementById("last-name").value,
+        email: document.getElementById("email").value,
+        message: document.getElementById("message").value
+    };
+
+    emailjs.send('service_mv1unno', 'template_pmnr8mj', templateParams)
+        .then(function(response) {
+           console.log('SUCCESS!', response.status, response.text);
+           alert("Email sent successfully!");
+        }, function(error) {
+           console.log('FAILED...', error);
+           alert("Failed to send email. Please try again.");
+        });
+}
+
+function resetForm() {
+    document.getElementById('contact-form').reset();
+}
