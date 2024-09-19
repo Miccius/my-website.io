@@ -129,7 +129,7 @@
 
 
 @media screen and (max-width: 480px) {
-    /*
+    
     
     .pricing-card {
 
@@ -147,7 +147,7 @@
             font-size: 25px;
            
         }
-        */
+    
         .from-price {
            
             font-size: 1.2rem; 
