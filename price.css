@@ -14,8 +14,7 @@
     font-size: large;
     font-weight: 500;
     max-width: 900px;
-    text-align: center; 
-    
+    text-align: center; /* Ensures text inside the h4 is centered */
 }
 
 
@@ -129,7 +128,16 @@
 
 
 @media screen and (max-width: 480px) {
-    
+    .pricing h4 {
+        margin-top: 40px;
+        margin-left: auto;
+        margin-right: auto;
+        font-size: large;
+        font-weight: 500;
+        max-width: 600px;
+        text-align: justify;
+        text-align-last: left; /* Ensures the last line is left-aligned */
+    }
     
     .pricing-card {
 
@@ -147,7 +155,7 @@
             font-size: 25px;
            
         }
-    
+        
         .from-price {
            
             font-size: 1.2rem; 
