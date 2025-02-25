@@ -80,6 +80,9 @@
     transition: transform 0.3s;
     z-index: 200;
     
+    /* Scroll properties */
+  max-height: 100%;
+  overflow-y: auto
     
 }
 
@@ -144,6 +147,30 @@ button.portfolio-btn {
     cursor: pointer;
     border: none;
     margin: .4em;
+  }
+
+  /* Buttons keyframe animation */
+@keyframes popIn {
+    from {
+      transform: scale(0.8);
+      opacity: 0;
+    }
+    to {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
+  
+  /* Update your portfolio-item class */
+  .portfolio-item {
+    flex: 1 1 300px;
+    min-width: 300px;
+    max-width: 350px;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    animation: popIn 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    transform-origin: center bottom;
   }
 
   

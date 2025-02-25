@@ -45,11 +45,20 @@ document.addEventListener('DOMContentLoaded', function() {
             filterButtons.forEach(btn => btn.classList.remove('active'));
             this.classList.add('active');
 
-            portfolioGrid.innerHTML = '';
-            portfolioItems.forEach(item => {
-                if (filter === 'all' || item.category === filter) {
-                    portfolioGrid.appendChild(createPortfolioItem(item));
-                }
+             // Force reflow before updating items
+    void portfolioGrid.offsetHeight;
+    
+    portfolioGrid.innerHTML = '';
+    portfolioItems.forEach(item => {
+      if (filter === 'all' || item.category === filter) {
+        const newItem = createPortfolioItem(item);
+        portfolioGrid.appendChild(newItem);
+        
+        // Add slight delay for staggered animation
+        setTimeout(() => {
+          newItem.style.opacity = '1';
+        }, 50);
+      }
             });
         });
     });
