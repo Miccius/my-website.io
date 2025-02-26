@@ -53,7 +53,7 @@
     animation-fill-mode: forwards; /* Ensure the final state persists */
     animation-timeline: view(); /* This is not a standard property, you may remove it */
     animation-range: entry 0% cover 40%; /* This is also not standard, you may remove it */
-
+    
 }
 
 
@@ -61,10 +61,12 @@
     width: 100%;
     height: auto;
     transition: transform 0.3s;
+    border-radius: 8px; 
 }
 
 .portfolio-item:hover img {
     transform: scale(1.1);
+    
 }
 
 .portfolio-info {
@@ -82,7 +84,7 @@
     
     /* Scroll properties */
   max-height: 100%;
-  overflow-y: auto
+  overflow-y: auto;
     
 }
 
@@ -158,7 +160,7 @@ button.portfolio-btn {
     to {
       transform: scale(1);
       opacity: 1;
-    }
+    } 
   }
   
   /* Update your portfolio-item class */

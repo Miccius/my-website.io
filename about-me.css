@@ -27,7 +27,7 @@
     width: 60px;
     height: 3px;
     background-color: var(--btn-social-color);
-    margin-bottom: 4vh;
+    margin-bottom: 2vh;
    
 }
 
@@ -38,6 +38,7 @@
 
 .short-story h4 {
     margin-bottom: 2vh;
+    font-size: calc(0.8rem + 1vw);
 }
 
 .short-story p {
@@ -91,6 +92,10 @@
     margin-right: auto; /* Remove default right margin */
     margin-top: 0px;
 
+}
+.short-story h4 {
+    margin-bottom: 2vh;
+    font-size: calc(0.8rem + 2vw);
 }
 
  .short-story{
