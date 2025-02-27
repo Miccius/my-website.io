@@ -106,7 +106,7 @@ body {
 .navbar a:hover {
     font-size: 18px;
     color: var(--btn-social-color); /* Change text color on hover */
-    
+   
 }
 
 .navbar a::after {
@@ -136,7 +136,7 @@ body {
     cursor: pointer;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
-    animation-delay: 2.2s;
+    animation-delay: 1.5s;
     transition: all 0.3s ease;
 
 }
@@ -351,6 +351,7 @@ body {
     height: 3px;
     background-color: var(--btn-social-color);
     margin: 0 auto;
+    margin-top: 2vh;
    /* margin: 0 0 8vh calc(50% - (60px + 3.7vw)); 
     position: relative; */
 }
@@ -392,6 +393,8 @@ body {
 .profession i {
     font-size: 3vw; 
     margin-bottom: 10px;
+   
+    
 }
 
 .profession h3 {
@@ -420,6 +423,7 @@ body {
     background: var(--primary-color);
     padding: 20px;
     box-shadow: 0 0 10px #ccc;
+    border-radius: 8px; 
 }
 
 .dash {
@@ -446,6 +450,7 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
+    
 }
 
 .features-row {
@@ -462,6 +467,7 @@ body {
     opacity: 0;
     transform: translateY(20px);
     transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    border-radius: 8px; 
 }
 
 .feature.show {
@@ -556,13 +562,14 @@ body {
 
     .navbar a:hover {
         
-        background-color: var(--btn-social-color);
-       
-       
-      
-        color: #fff;
+        color: var(--btn-social-color);
        
         
+    }
+
+    .navbar a::after {
+        
+        background: none;; /* Underline color */
         
     }
 
@@ -574,7 +581,7 @@ body {
         z-index: 101;
         opacity: 0;
         animation: slideLeft 1s ease forwards;
-        animation-delay: 2s;
+        animation-delay: 1.2s;
         transition: all 0.3s ease;
     }
 
