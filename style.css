@@ -62,13 +62,21 @@ body {
     width: 100%;
     padding: 20px 7%;
     background-color: var(--header-color);
-    display: flex;
-    align-items: center;
     z-index: 300;
-    height: 11%;
+    height:11%;
+    display: flex;
     min-height: 60px;
-  
     
+  }
+
+  .wrap-nav {
+
+    max-width: 1100px;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* 🔥 Use space-between instead */
+    align-items: center;
   }
 
   .logo img {
@@ -83,8 +91,6 @@ body {
     align-items: center;
     justify-content: center;
 
-    
-  
 }
 
 .navbar a {
@@ -152,25 +158,35 @@ body {
 }
 
 
-
-
 .home {
     
     width: 100%;
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: space-around;
-    background-image: url('Images/white_wall.png');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
     height: 100vh; 
     position: relative;
+    max-width: 1300px;
+    margin: 0 auto;
     }
+
+.bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        min-height: 70%;
+        background-image: url("Images/white_wall.png"); /* Update path if needed */
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        z-index: -1;
+}
 
 .home-wrap {
     
+    min-height: 70%;
     position: absolute;
     top: 0;
     left: 0;
@@ -182,7 +198,7 @@ body {
 
 
 
-.dark-mode .home {
+.dark-mode .bg {
     
     background-image: url('Images/black_wall.png');
    
@@ -203,7 +219,7 @@ body {
 
 
 .home-content h3 {
-    margin-bottom: 2%;
+    margin-bottom: 3%;
     font-size: 2.5vw;
     line-height:.8;
     opacity: 0;
@@ -224,7 +240,7 @@ body {
 
 
 .home-content p {
-    font-size: calc(8px + 1.2vw);
+    font-size: calc(12px + 1.2vw);
     font-weight: 500;
     margin-top: 20px;
     max-width: 500px;
@@ -322,7 +338,8 @@ body {
 
 .home-img img {
     border-radius: 50%;
-    max-width: 30vw;
+    max-width: 25vw;
+    
    
     
     
@@ -333,6 +350,7 @@ body {
     background-color:var(--light-grey-color); 
     padding: 3%;
     overflow: hidden;
+    
 }
 
 .what-i-do {
@@ -343,7 +361,8 @@ body {
    /* text-align: left;
    padding-left: calc(50% - (67px + 3.7vw));  */
     padding: 8hv;
-    margin-top: 8vh;
+    margin-top: 1vh;
+  
 }
 
 .dash-what-i-do {
@@ -351,7 +370,7 @@ body {
     height: 3px;
     background-color: var(--btn-social-color);
     margin: 0 auto;
-    margin-top: 2vh;
+    margin-bottom: 80px;
    /* margin: 0 0 8vh calc(50% - (60px + 3.7vw)); 
     position: relative; */
 }
@@ -365,7 +384,8 @@ body {
 
 .profession-container {
     text-align: center;
-    margin:8vh 0 8vh 0;
+    margin:0 auto;
+    max-width: 1300px;
 }
 
 .profession-box {
@@ -414,6 +434,7 @@ body {
     margin:auto;
     margin-bottom: 15vh;
     margin-top: 15vh;
+    max-width: 1200px;
 }
 
 .content-left {
@@ -435,7 +456,7 @@ body {
 }
 
 .content-left h1 {
-    font-size: 24px;
+    font-size: 34px;
     text-transform: uppercase;
     margin-bottom: 2vh;
  padding-bottom: 10px;
@@ -636,7 +657,7 @@ body {
     }
 
     .home-content p {
-        font-size: 16px;
+        font-size: 26px;
     }
 
     .home-img {
@@ -646,6 +667,7 @@ body {
 
     .home-img img {
         max-width: calc(100px + 20vw);
+        margin-top: 20%;
     }
 
     .social-media {
@@ -676,7 +698,14 @@ body {
         flex-direction: column;
     }
    
+   .bg {
+    min-height: 900px;
+   }
 
+   .home-wrap {
+
+    min-height: 900px;
+   }
 }
 
 
@@ -758,6 +787,15 @@ body {
         font-size: calc(3vw + 1vh);
 
     }
+
+    .bg {
+        min-height: 700px;
+       }
+    
+       .home-wrap {
+    
+        min-height: 700px;
+       }
 
 
     /*-----------------------------------portfolio -------------------------------*/

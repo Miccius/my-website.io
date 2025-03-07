@@ -2,7 +2,19 @@
 
 #portfolio-wrap {
     padding: 4vw;
-    background-color: var(--light-grey-color);
+   background-color: var(--light-grey-color);
+    max-width: 1200px;
+    margin: 0 auto;
+    margin-bottom: 70px;
+}
+
+.col-lg-12{
+  margin-bottom: 40px;
+}
+
+.col-lg-12 ul{
+  
+  text-align: center;
 }
 
 .col-lg-12 h2 {
@@ -24,11 +36,13 @@
 .col-lg-12 p {
     margin: 5vh 0 5vh 0;
     font-size: 22px;
+    max-width: 1000px;
 }
 
 #portfolio-grid {
-    display: flex;
-    flex-wrap: wrap;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
    
 }
 
@@ -44,22 +58,27 @@
 .portfolio-item {
   
     flex: 1 1 300px; 
-    min-width: 300px; 
+    min-width: 350px; 
     max-width: 350px; 
-    margin: 10px;
+    margin: 55px;
     position: relative;
     overflow: hidden;
     animation: appear 0.5s linear; /* Add duration */
     animation-fill-mode: forwards; /* Ensure the final state persists */
     animation-timeline: view(); /* This is not a standard property, you may remove it */
     animation-range: entry 0% cover 40%; /* This is also not standard, you may remove it */
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     
 }
 
 
 .portfolio-item img {
     width: 100%;
-    height: auto;
+    height: 100%;
     transition: transform 0.3s;
     border-radius: 8px; 
 }
@@ -96,7 +115,8 @@
 }
 
 .portfolio-info h4 :hover {
-    color: aqua;
+  color: var(--btn-social-color);
+
 }
 
 .portfolio-item:hover .portfolio-info {
@@ -104,9 +124,15 @@
     
 }
 
+.portfolio-info h3 {
+  color: var(--btn-social-color);
+  font-size: x-large;
+}
+
 .link-projects {
-    color: var(--btn-social-color);
+    
     text-decoration: none;
+    color: aqua;
    
    
    
@@ -130,16 +156,17 @@ button.portfolio-btn {
     outline: var(--b) solid #0000;
     outline-offset: .2em;
   }
+
   button.portfolio-btn:hover,
-  button:focus-visible{
+  button:focus-visible,
+  button.portfolio-btn.active{
     --_p: 0px;
     outline-color: var(--c);
     outline-offset: .05em;
+    color: var(--main-color);
   }
-  button.portfolio-btn:active {
-    background: #597cff;
-    color: var(--portfolio-color);
-  }
+
+ 
   
 
   button.portfolio-btn {
@@ -187,6 +214,7 @@ button.portfolio-btn {
     .col-lg-12 h2 {
         margin-top: 80px;
     }
+
 
 }
 

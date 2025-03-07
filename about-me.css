@@ -5,7 +5,10 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-    gap: 40px; 
+    gap: 40px;
+    max-width: 1200px;
+    margin: 0 auto
+
 }
 
 
@@ -17,11 +20,7 @@
    
 }
 
-.short-story h2 {
-    font-weight: 200;
-    font-size: calc(1.5rem + 1vw);
-    margin-bottom: 1vh; /* Reduced margin for tighter spacing */
-}
+
 
 .about-me-dash {
     width: 60px;
@@ -29,6 +28,11 @@
     background-color: var(--btn-social-color);
     margin-bottom: 2vh;
    
+}
+
+.short-story h2 {
+    font-weight: 200;
+    font-size: calc(1.5rem + 1vw);
 }
 
 .short-story h2 .about-me-me {
@@ -41,10 +45,18 @@
     font-size: calc(0.8rem + 1vw);
 }
 
+.first2-para {
+    margin-left: 400px;
+    margin-right:0px;
+    padding: 0px 60px;
+    
+}
+
 .short-story p {
     width: 100%;
     line-height: 35px;
 }
+
 
 
 
@@ -54,7 +66,6 @@
     width: 100%; /* Ensures image scales properly */
     height: auto; /* Maintains aspect ratio */
     float: left;
-    margin-right: 20px;
     border-radius: 8px; /* Optional: Adds a modern touch */
 
 }
@@ -63,25 +74,24 @@
 
     .about-me {
         flex-direction: column;
-        align-items: flex-start; /* Aligns content to the start */
-        gap: 20px; /* Adjusted gap for better spacing */
+        align-items: center; /* Aligns content to the start */
+        gap: 0px; /* Adjusted gap for better spacing */
     }
 
 
     .about-me-image img {
-
-        width: 90vw;
+        width: 80vw;
         max-width: 600px;
         float: none;
-        margin-right:0px;
+        margin-left: 5vw;
         max-width: 100%; 
-    
     }
-
-
-    .content-about-me p {
-
-        max-width: 800px;
+   
+    .first2-para {
+    
+        margin-left:2vw;
+        padding: 2vw 4vw;
+        
     }
 
     .short-story h2,

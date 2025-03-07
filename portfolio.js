@@ -21,7 +21,7 @@ document.addEventListener('DOMContentLoaded', function() {
         const div = document.createElement('div');
         div.className = `portfolio-item ${item.category}`;
         div.innerHTML = `
-            <img src="${item.image}" alt="${item.title}">
+            <img src="${item.image}" alt="${item.title}" style>
             <div class="portfolio-info">
                 <h3>${item.title}</h3>
                 <p>${item.description}</p>
