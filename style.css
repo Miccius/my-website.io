@@ -38,6 +38,8 @@ body {
     background: var(--primary-color);
     color: var(--secondary-color);
     overflow-x: hidden;
+    overscroll-behavior: none;
+    touch-action: pan-y;
     
    
 }
@@ -789,12 +791,12 @@ body {
     }
 
     .bg {
-        min-height: 700px;
+        min-height: 820px;
        }
     
        .home-wrap {
     
-        min-height: 700px;
+        min-height: 820px;
        }
 
 
