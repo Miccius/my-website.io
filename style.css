@@ -38,10 +38,7 @@ body {
     background: var(--primary-color);
     color: var(--secondary-color);
     overflow-x: hidden;
-    overscroll-behavior: none;
-    touch-action: pan-y;
     
-   
 }
 
 
@@ -161,7 +158,7 @@ body {
 
 
 .home {
-    
+    overflow-x: hidden;
     width: 100%;
     height: 100%;
     display: flex;
@@ -742,12 +739,20 @@ body {
 
 @media screen and (max-width: 480px) {
 
-    .logo img {
+    
+      .logo img {
         max-width: 110px;
+    }
+
+   .home .home-content {
+
+        margin-top: 10px;
     }
 
     .home-content h3 {
         font-size: 20px;
+        
+        
     }
 
     .home-content h1 {
@@ -756,16 +761,28 @@ body {
 
     .home-content p {
         font-size: 22px;
+        margin-top: 10px;
+       
+    }
+
+    .dash-home {
+        margin-bottom: 0;
     }
 
     .home-img img {
         max-width: calc(70px + 40vw);
-        margin-top: 40px;
+        margin-top: 20px;
+    }
+
+    .social-media {
+        margin-top: 0;
+
     }
 
     .btn {
         padding: 10px 20px;
         font-size: 14px;
+        margin-top: 0px;
     }
 
 
@@ -774,30 +791,44 @@ body {
         font-size: 20px;
     }
 
+
+    .bg {
+        min-height: 720px;
+       }
+    
+       .home-wrap {
+    
+        min-height: 720px;
+       }
+
+
+
+    .container{
+
+        margin-top: 40px
+    }   
+
+    .profession-box {
+        margin-top: 0px;
+    }   
+
     .what-i-do {
-        margin-top: 90px;
+        margin-top: 40px;
     }
 
+    .dash-what-i-do {
+        margin-bottom: 40px;
+    }
   
     .profession i {
         font-size: 8vw;
     }
     .profession h3 {
-
-       
+         
         margin: 0;
-        font-size: calc(3vw + 1vh);
+         font-size: calc(3vw + 1vh);
 
     }
-
-    .bg {
-        min-height: 820px;
-       }
-    
-       .home-wrap {
-    
-        min-height: 820px;
-       }
 
 
     /*-----------------------------------portfolio -------------------------------*/
