@@ -1,7 +1,7 @@
 /*############################################ PORTFOLOIO SECTION #####################################*/
 
 #portfolio-wrap {
-    padding: 4vw;
+    padding: 1vw 4vw;
    background-color: var(--light-grey-color);
     max-width: 1200px;
     margin: 0 auto;
@@ -10,6 +10,7 @@
 
 .col-lg-12{
   margin-bottom: 40px;
+  padding: 0px 20px 0px 20px;
 }
 
 .col-lg-12 ul{
@@ -211,10 +212,7 @@ button.portfolio-btn {
         padding: 0.5em 1.5em; /* Adjust padding for mobile */
     }
 
-    .col-lg-12 h2 {
-        margin-top: 80px;
-    }
-
+    
 
 }
 
@@ -226,6 +224,10 @@ button.portfolio-btn {
         padding: 0 50px 0 20px ;
     }
      
+    .col-lg-12 {
+
+      margin-top: 20px;
+    }
 
 
 

@@ -2,13 +2,13 @@
 
 .pricing {
     text-align: center;
-    padding: 150px 60px;
+    padding: 60px 60px;
     
     background-color: var(--light-grey-color);
 }
 
 .pricing h4 {
-    margin-top: 40px;
+    margin-top: 30px;
     margin-left: auto;
     margin-right: auto;
     font-size: large;
@@ -128,10 +128,16 @@
 
 
 @media screen and (max-width: 480px) {
+
+    .pricing {
+        padding: 40px 20px;
+    }
+
     .pricing h4 {
-        margin-top: 40px;
+        margin-top: 30px;
         margin-left: auto;
         margin-right: auto;
+        padding: 0px 20px;
         font-size: large;
         font-weight: 500;
         max-width: 600px;
@@ -140,8 +146,6 @@
     }
     
     .pricing-card {
-
-        padding: 20px;
         
         max-width:250px;
     }
