@@ -23,6 +23,11 @@
   
 }
 
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 80px; /* Adjust this value to match your navbar height */
+  }
+
 .dark-mode {
 
     --nav-primary-color: #fff;
@@ -49,7 +54,6 @@ body {
     margin-bottom: 2vh;
     position: relative;
     z-index: 100;
-
 }
 
 
@@ -103,8 +107,6 @@ body {
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: calc(.2s * var(--i));
-
-
     transition: all 0.3s ease;
 }
     
@@ -168,6 +170,7 @@ body {
     max-width: 1300px;
     margin: 0 auto;
     }
+    
 
 .bg {
         position: absolute;
@@ -263,7 +266,6 @@ body {
     align-items: center;
     width: 45px;
     height: 45px;
-   
     background: transparent;
     border-radius: 50%;
     font-size: 25px;
@@ -278,6 +280,11 @@ body {
     animation-delay: calc(.1.5s * var(--i));
    
 }
+
+.social-media a.first {
+margin-left: 0px
+}
+
 
 .social-media a:hover {
     background: var(--btn-social-color);
@@ -304,6 +311,7 @@ body {
     opacity: 0;
     animation: fadeIn 1s ease forwards;
     animation-delay: 1.2s;
+    margin-left: 8px;
 }
 
 /* New hover effect */
@@ -338,11 +346,6 @@ body {
 .home-img img {
     border-radius: 50%;
     max-width: 25vw;
-    
-   
-    
-    
-    
 }
 
 .what-i-do-do {
@@ -674,6 +677,7 @@ body {
    
     .btn {
         margin-top: 20px;
+        margin-left: 0px;
     }
 
     .dash-home {
@@ -743,7 +747,7 @@ body {
 
    .home .home-content {
 
-        margin-top: 10px;
+        margin-top: 20px;
     }
 
     .home-content h3 {
@@ -790,12 +794,12 @@ body {
 
 
     .bg {
-        height: 710px;
+        height: 725px;
        }
     
        .home-wrap {
     
-        height: 710px;
+        height: 725px;
        }
 
 
@@ -808,10 +812,11 @@ body {
 
     .profession-box {
         margin-top: 0px;
+        margin-bottom: 10px;
     }   
 
     .what-i-do {
-        margin-top: 40px;
+        margin-top: 20px;
     }
 
     .dash-what-i-do {
@@ -829,7 +834,9 @@ body {
 
     }
 
-
+    .content-left h1 {
+        font-size: 24px;
+    }
    
 
 
