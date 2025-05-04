@@ -8,6 +8,43 @@ toggleIcon.addEventListener('click',() => {
    
 })
 
+///////////////////////navbar fadeing/////////////////////////////
+
+document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.querySelector('header');
+    const logoClass = document.querySelector('.logo');
+    const arrowsUp = document.querySelector('.arrows-up');
+    const scrolledClass = 'navbar-scrolled';
+    const scrollThreshold = 50;
+    const logoScrolled = 'logo-scroll';
+    const arrowsHide = 'arrows-scroll';
+    
+    function updateNavbar() {
+        if (window.scrollY > scrollThreshold) {
+            // When scrolled down
+            navbar.classList.add(scrolledClass);
+            logoClass.classList.add(logoScrolled);
+            arrowsUp.classList.remove(arrowsHide); // Show arrow when scrolled
+        } else {
+            // When at top of page
+            navbar.classList.remove(scrolledClass);
+            logoClass.classList.remove(logoScrolled);
+            arrowsUp.classList.add(arrowsHide); // Hide arrow at top
+        }
+    }
+    
+    
+    // Initial check in case page loads with scroll
+    updateNavbar();
+    
+    // Listen for scroll events (with debounce for performance)
+    let isScrolling;
+    window.addEventListener('scroll', function() {
+        window.clearTimeout(isScrolling);
+        isScrolling = setTimeout(updateNavbar, 50);
+    }, false);
+});
+
 
 document.addEventListener('DOMContentLoaded', function() {
     const professions = document.querySelectorAll('.profession');
