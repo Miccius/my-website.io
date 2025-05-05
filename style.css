@@ -336,7 +336,7 @@ margin-left: 0px
 .arrows-up {
     position: fixed;
     z-index: 1000;
-    right: 10px;
+    right: 40px;
     top:90vh;
    
 }
@@ -739,6 +739,11 @@ margin-left: 0px
 
     height: 900px
    }
+
+   .arrows-up {
+    right: 15px;
+    top:85vh;
+   }
 }
 
 
@@ -746,6 +751,8 @@ margin-left: 0px
 
 
 @media (max-width: 720px) {
+
+    
     .profession-box {
         flex-direction:column;
         
@@ -819,6 +826,14 @@ margin-left: 0px
         margin-top: 0px;
     }
 
+    .arrows-up {
+        right: 5px;
+        top:85vh;
+       }
+    .arrows-up img {
+        width:35px
+    }
+
 
     .content-about-me p {
 
@@ -837,7 +852,7 @@ margin-left: 0px
 
 
 
-    .container{
+    .container {
 
         margin-top: 40px;
         margin-bottom: 20px
