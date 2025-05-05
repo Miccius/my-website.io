@@ -45,6 +45,71 @@ document.addEventListener('DOMContentLoaded', function() {
     }, false);
 });
 
+//////////////////////Nav-Links////////////////////////
+document.addEventListener('DOMContentLoaded', function() {
+    const navbar = document.querySelector('.navbar');
+    
+    navbar.addEventListener('click', function(e) {
+      if (e.target.classList.contains('nav-link')) {
+        // Remove active class from all links
+        document.querySelectorAll('.nav-link').forEach(link => {
+          link.classList.remove('active');
+        });
+        
+        // Add active class to clicked link
+        e.target.classList.add('active');
+      }
+    });
+  });
+//
+
+
+///////////////////////scroll link lighter////////////////////
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
+    
+    // Options for Intersection Observer
+    const options = {
+        root: null,
+        rootMargin: '0px',
+        threshold: 0.5
+    };
+
+    // Create observer
+    const observer = new IntersectionObserver(function(entries) {
+        entries.forEach(entry => {
+            if (entry.isIntersecting) {
+                // Remove active class from all links
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                });
+                
+                // Get the ID of the visible section
+                const id = entry.target.getAttribute('id');
+                
+                // Find corresponding link and add active class
+                const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
+                if (activeLink) {
+                    activeLink.classList.add('active');
+                }
+            }
+        });
+    }, options);
+
+    // Observe each section
+    sections.forEach(section => {
+        observer.observe(section);
+    });
+
+    // Remove the manual smooth scrolling implementation
+    // (Let CSS handle smooth scrolling and scroll-padding-top)
+});
+
+
+
+/////////////////////////Profession/////////////////////
 
 document.addEventListener('DOMContentLoaded', function() {
     const professions = document.querySelectorAll('.profession');
@@ -111,6 +176,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const nav = document.querySelector('.navbar');
     const navLinks = document.querySelectorAll('.navbar a');
 
+
     burger.addEventListener('click', () => {
         nav.classList.toggle('active');
         burger.classList.toggle('active');
@@ -158,6 +224,8 @@ function sendEmail() {
 function resetForm() {
     document.getElementById('contact-form').reset();
 }
+
+
 
 
 
