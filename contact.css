@@ -3,6 +3,8 @@
     background-image: none; /* Remove the background image from here */
     width: 100%;
     height: auto;
+    min-height: 100vh;
+    
 }
 
 .contact-section::before {

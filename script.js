@@ -46,6 +46,7 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 //////////////////////Nav-Links////////////////////////
+/*
 document.addEventListener('DOMContentLoaded', function() {
     const navbar = document.querySelector('.navbar');
     
@@ -61,51 +62,30 @@ document.addEventListener('DOMContentLoaded', function() {
       }
     });
   });
-//
+//*/
 
 
 ///////////////////////scroll link lighter////////////////////
 
-document.addEventListener('DOMContentLoaded', function() {
-    const sections = document.querySelectorAll('section');
-    const navLinks = document.querySelectorAll('.nav-link');
-    
-    // Options for Intersection Observer
-    const options = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.5
-    };
+window.addEventListener("scroll", () => {
+    const scrollY = window.pageYOffset;
 
-    // Create observer
-    const observer = new IntersectionObserver(function(entries) {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                // Remove active class from all links
-                navLinks.forEach(link => {
-                    link.classList.remove('active');
-                });
-                
-                // Get the ID of the visible section
-                const id = entry.target.getAttribute('id');
-                
-                // Find corresponding link and add active class
-                const activeLink = document.querySelector(`.nav-link[href="#${id}"]`);
-                if (activeLink) {
-                    activeLink.classList.add('active');
-                }
-            }
-        });
-    }, options);
+    document.querySelectorAll("section[id]").forEach(current => {
+        const sectionHeight = current.offsetHeight;
+        const sectionTop = current.offsetTop - 50;
+        const sectionId = current.getAttribute("id");
 
-    // Observe each section
-    sections.forEach(section => {
-        observer.observe(section);
+        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
+            document.querySelectorAll(".nav-link").forEach(link => {
+                link.classList.remove("active");
+            });
+
+            const activeLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+            if (activeLink) activeLink.classList.add("active");
+        }
     });
-
-    // Remove the manual smooth scrolling implementation
-    // (Let CSS handle smooth scrolling and scroll-padding-top)
 });
+
 
 
 
