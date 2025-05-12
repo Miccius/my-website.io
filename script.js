@@ -66,26 +66,55 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 ///////////////////////scroll link lighter////////////////////
+// Select all navigation links
+const navLinks = document.querySelectorAll('.nav-link');
+const sections = document.querySelectorAll('section');
 
-window.addEventListener("scroll", () => {
-    const scrollY = window.pageYOffset;
+// Function to set active link based on scroll position
+function setActiveLink() {
+  // Get current scroll position
+  const scrollPosition = window.scrollY;
+  
+  // Check each section's position
+  sections.forEach(section => {
+    const sectionTop = section.offsetTop - 100; // Offset for better UX
+    const sectionHeight = section.offsetHeight;
+    const sectionId = section.getAttribute('id');
+    
+    // Check if we're in this section
+    if (scrollPosition >= sectionTop && scrollPosition < sectionTop + sectionHeight) {
+      // Remove active class from all links
+      navLinks.forEach(link => {
+        link.classList.remove('active');
+      });
+      
+      // Add active class to corresponding nav link
+      const activeLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
+      if (activeLink) {
+        activeLink.classList.add('active');
+      }
+    }
+  });
+}
 
-    document.querySelectorAll("section[id]").forEach(current => {
-        const sectionHeight = current.offsetHeight;
-        const sectionTop = current.offsetTop - 50;
-        const sectionId = current.getAttribute("id");
-
-        if (scrollY > sectionTop && scrollY <= sectionTop + sectionHeight) {
-            document.querySelectorAll(".nav-link").forEach(link => {
-                link.classList.remove("active");
-            });
-
-            const activeLink = document.querySelector(`.nav-link[href="#${sectionId}"]`);
-            if (activeLink) activeLink.classList.add("active");
-        }
+// Add click event listeners to each navigation link
+navLinks.forEach(link => {
+  link.addEventListener('click', function(e) {
+    // Remove active class from all links
+    navLinks.forEach(link => {
+      link.classList.remove('active');
     });
+    
+    // Add active class to clicked link
+    this.classList.add('active');
+  });
 });
 
+// Listen for scroll events
+window.addEventListener('scroll', setActiveLink);
+
+// Set active link on page load
+document.addEventListener('DOMContentLoaded', setActiveLink);
 
 
 
