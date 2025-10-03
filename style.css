@@ -439,15 +439,18 @@ margin-left: 0px
 .profession-container {
     text-align: center;
     margin:0 auto;
-    max-width: 1300px;
+    
 }
 
 .profession-box {
+     
     display: flex;
-    justify-content: space-around;
+    flex-wrap: wrap; /* Allows cards to wrap on smaller screens */
+    justify-content: center; /* Centers cards horizontally */
+    gap: 10rem; /* Adds consistent spacing between cards */
     margin-top: 5vh;
     margin-bottom: 5vh;
-    
+    padding: 0 1rem; /* Optional: Adds padding for smaller screens */
 }
 
 .profession {
@@ -479,27 +482,8 @@ margin-left: 0px
 
 /*########################################## ILLUSTRATION SECTION DOWN ########################################*/
 
-.container {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    gap: 20px;
-    padding: 20px;
-    max-width: 1500px;
-    margin:auto;
-    margin-bottom: 10vh;
-    margin-top: 10vh;
-    max-width: 1200px;
-}
 
-.content-left {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    background: var(--primary-color);
-    padding: 20px;
-    box-shadow: 0 0 10px #ccc;
-    border-radius: 8px; 
-}
+
 
 .dash {
     width: 30px;
@@ -509,19 +493,13 @@ margin-left: 0px
 
 }
 
-.content-left h1 {
-    font-size: 34px;
-    text-transform: uppercase;
-    margin-bottom: 2vh;
- padding-bottom: 10px;
+.container {
+    max-width: 1250px;
+    margin: 0 auto;
+    padding: 2rem;
 }
 
-.content-left p {
-    margin-bottom: 2vh;
-    font-size: 22px;
-}
-
-.content-right {
+.cards-container {
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -875,11 +853,6 @@ margin-left: 0px
 /**********************skills**************************************/
 
 
-    .container {
-
-        margin-top: 40px;
-        margin-bottom: 20px
-    }   
 
     .profession-box {
         margin-top: 0px;
@@ -905,9 +878,7 @@ margin-left: 0px
 
     }
 
-    .content-left h1 {
-        font-size: 24px;
-    }
+   
    
 
 
