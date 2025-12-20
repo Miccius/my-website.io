@@ -14,10 +14,11 @@ document.addEventListener("DOMContentLoaded", function () {
     },
     {
       category: "web-app",
-      image: "Images/Jobpost.png",
-      title: "Workopia",
+      image: "Images/jobpost.png",
+      title: "JOBOARD",
       link: '<a  class="link-projects" href="https://job-board-production-c632.up.railway.app/" target= "_blank"><p>Visit My Project</p></a>',
-      description: "Jop-Post",
+      description:
+        "Full Job Board: a larger SaaS-style application with dashboards, filtering, file uploads, and advanced authentication.",
     },
     {
       category: "wordPress-theme-website",
