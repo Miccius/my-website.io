@@ -18,7 +18,15 @@ document.addEventListener("DOMContentLoaded", function () {
       title: "JOBOARD",
       link: '<a  class="link-projects" href="https://job-board-production-c632.up.railway.app/" target= "_blank"><p>Visit My Project</p></a>',
       description:
-        "Full Job Board: a larger SaaS-style application with dashboards, filtering, file uploads, and advanced authentication.",
+        "Full Job Board webapp with Laravel and mysql. A larger SaaS-style application with dashboards, filtering, file uploads, and advanced authentication.",
+    },
+    {
+      category: "web-app",
+      image: "Images/book-review.png",
+      title: "BOOK REVIEWS",
+      link: '<a  class="link-projects" href="https://laravel-book-review-production-50ea.up.railway.app/" target= "_blank"><p>Visit My Project</p></a>',
+      description:
+        "Book review system build with laravel and mysql. A relational app with reviews, ratings, advanced queries, and caching",
     },
     {
       category: "wordPress-theme-website",
