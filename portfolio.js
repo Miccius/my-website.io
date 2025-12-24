@@ -20,13 +20,14 @@ document.addEventListener("DOMContentLoaded", function () {
       description:
         "Full Job Board webapp with Laravel and mysql. A larger SaaS-style application with dashboards, filtering, file uploads, and advanced authentication.",
     },
+
     {
       category: "web-app",
-      image: "Images/book-review.png",
-      title: "BOOK REVIEWS",
-      link: '<a  class="link-projects" href="https://laravel-book-review-production-50ea.up.railway.app/" target= "_blank"><p>Visit My Project</p></a>',
+      image: "Images/task-list.png",
+      title: "TASK LIST",
+      link: '<a  class="link-projects"https://task-list-production-e0cf.up.railway.app/s" target= "_blank"><p>Visit My Project</p></a>',
       description:
-        "Book review system build with laravel and mysql. A relational app with reviews, ratings, advanced queries, and caching",
+        " A simpletasl tasks list app to learn the MVC structure, CRUD, forms, and validation.",
     },
     {
       category: "wordPress-theme-website",
