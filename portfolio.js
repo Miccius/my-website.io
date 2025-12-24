@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
       category: "web-app",
       image: "Images/jobpost.png",
       title: "JOBOARD",
-      link: '<a  class="link-projects" href="https://job-board-production-c632.up.railway.app/" target= "_blank"><p>Visit My Project</p></a>',
+      link: '<a  class="link-projects" href="https://job-board-production-c632.up.railway.app/" target="_blank"><p>Visit My Project</p></a>',
       description:
         "Full Job Board webapp with Laravel and mysql. A larger SaaS-style application with dashboards, filtering, file uploads, and advanced authentication.",
     },
@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
       category: "web-app",
       image: "Images/book-review.png",
       title: "BOOK REVIEW",
-      link: '<a  class="link-projects" href="=https://laravel-book-review-production-50ea.up.railway.app/" target= "_blank"><p>Visit My Project</p></a>',
+      link: '<a  class="link-projects" href="https://laravel-book-review-production-50ea.up.railway.app/"target= "_blank"><p>Visit My Project</p></a>',
       description:
         " A relational book review app with reviews, ratings, advanced queries, and caching.",
     },
@@ -32,7 +32,7 @@ document.addEventListener("DOMContentLoaded", function () {
       category: "web-app",
       image: "Images/task-list.png",
       title: "TASK LIST",
-      link: '<a class="link-projects" href="https://task-list-production-e0cf.up.railway.app/tasks" target= "_blank"><p>Visit My Project</p></a>',
+      link: '<a class="link-projects" href="https://task-list-production-e0cf.up.railway.app/" target="_blank"><p>Visit My Project</p></a>',
       description:
         "A simple tasks list app to learn the MVC structure, CRUD, forms, and validation.",
     },
